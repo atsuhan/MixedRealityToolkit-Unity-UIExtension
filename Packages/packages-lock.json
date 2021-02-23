@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.cysharp.unitask": {
+      "version": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "1173bb4f34460ee473c93b414066d8d7436445dd"
+    },
     "com.microsoft.mixedreality.toolkit.examples": {
       "version": "2.5.4",
       "depth": 0,
@@ -45,6 +52,13 @@
         "com.microsoft.mixedreality.toolkit.foundation": "2.5.4"
       },
       "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry"
+    },
+    "com.neuecc.unirx": {
+      "version": "https://github.com/neuecc/UniRx.git?path=Assets/Plugins/UniRx/Scripts",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "284d5c50d3f1ddd9fa7df3d382ea904732a9c2ff"
     },
     "com.unity.collab-proxy": {
       "version": "1.2.16",
