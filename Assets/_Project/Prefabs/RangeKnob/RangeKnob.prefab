@@ -11,7 +11,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 8528021390993075738, guid: 9c6049e6be7dce647bbda53d766bf42b, type: 3}
 --- !u!82 &8945491006042285050
@@ -110,7 +110,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &5745036599787118812
+--- !u!114 &739892622781432507
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,12 +119,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 3950365739556221060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af48e841bb8b4bfb92664edc39498f43, type: 3}
+  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _audioSource: {fileID: 8945491006042285050}
-  _clickAudio: {fileID: 8300000, guid: 0632575a55cf09349a999a10968f6395, type: 3}
---- !u!114 &6340198751472029137
+  handType: -1
+  proximityType: -1
+  constraintOnRotation: 3
+  useLocalSpaceForConstraint: 1
+--- !u!114 &1033447812016021210
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,16 +135,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3950365739556221060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79583923226a29c44aea516c30c77acf, type: 3}
+  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _angleThreshold: 5
-  _valueInterval: 1
-  _valueDecimalDigit: 0
-  _resetAnimationDuration: 0.5
-  _autoModeStartDuration: 1
-  _autoModeLoopInterval: 0.1
-  _autoModeValueRate: 0.2
+  autoConstraintSelection: 1
+  selectedConstraints:
+  - {fileID: 8447911329406592024}
 --- !u!114 &3115711382884707499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -276,7 +274,7 @@ MonoBehaviour:
   onHoverExited:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1033447812016021210
+--- !u!114 &5745036599787118812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -285,13 +283,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3950365739556221060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a98de877dee5fc341b4eb59dfdab266c, type: 3}
+  m_Script: {fileID: 11500000, guid: af48e841bb8b4bfb92664edc39498f43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  autoConstraintSelection: 1
-  selectedConstraints:
-  - {fileID: 8447911329406592024}
---- !u!114 &739892622781432507
+  _audioSource: {fileID: 8945491006042285050}
+  _clickAudio: {fileID: 8300000, guid: 0632575a55cf09349a999a10968f6395, type: 3}
+--- !u!114 &6340198751472029137
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,13 +297,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 3950365739556221060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b3e6359c9750ad4fb8a05c9b8704d7b, type: 3}
+  m_Script: {fileID: 11500000, guid: 79583923226a29c44aea516c30c77acf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handType: -1
-  proximityType: -1
-  constraintOnRotation: 3
-  useLocalSpaceForConstraint: 1
+  _angleMin: 10
+  _angleMax: 120
+  _valueDiff: 1
+  _resetAnimationDuration: 0.5
+  _autoModeStartDuration: 0.5
+  _autoModeIntervalMin: 0.01
+  _autoModeIntervalMax: 0.25
 --- !u!114 &8447911329406592024
 MonoBehaviour:
   m_ObjectHideFlags: 0

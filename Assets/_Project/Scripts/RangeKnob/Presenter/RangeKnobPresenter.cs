@@ -23,8 +23,11 @@ public class RangeKnobPresenter : MonoBehaviour
 
         // stream update model value from UI
         _rangeKnobAngleView
-            .ObserveEveryValueChanged(knobView => knobView.ChangeValue)
-            .Where(changeVal => changeVal != 0)
-            .Subscribe(changeVal => { _rangeKnobModel.AddValue(changeVal); });
+            .ChangedValueObservable
+            .Subscribe(changeVal =>
+            {
+                _rangeKnobModel.AddValue(changeVal);
+            })
+            .AddTo(this);;
     }
 }
