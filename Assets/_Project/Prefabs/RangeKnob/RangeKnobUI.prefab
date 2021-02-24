@@ -47,7 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rangeKnobModel: {fileID: 7090730376157712391}
-  _rangeKnobView: {fileID: 7652315543093076985}
+  _rangeKnobAngleView: {fileID: 7652315543093076985}
+  _rangeKnobAudioView: {fileID: 8247477419904274164}
   _rangeKnobTextView: {fileID: 5411758823960378186}
 --- !u!114 &7090730376157712391
 MonoBehaviour:
@@ -265,8 +266,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 0.03
-  m_fontSizeBase: 0.03
+  m_fontSize: 0.02
+  m_fontSizeBase: 0.02
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -395,6 +396,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 4453661309885410856}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8247477419904274164 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5745036599787118812, guid: 9aacf90e657fb174eb61a81a9b4b0763,
+    type: 3}
+  m_PrefabInstance: {fileID: 4453661309885410856}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af48e841bb8b4bfb92664edc39498f43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &7652315543093076985 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6340198751472029137, guid: 9aacf90e657fb174eb61a81a9b4b0763,

@@ -1,12 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 public class RangeKnobTextView : MonoBehaviour
 {
-    [SerializeField]
-    private TMP_Text _valueTMP;
+    [SerializeField] private TMP_Text _valueTMP;
 
     public void SetValue(float val)
     {
